@@ -1,0 +1,96 @@
+footer{
+  color: white;
+  background-color:lighten($primaryText, 10);
+  padding-top: 8vh;
+
+  .foot-top{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 10vh;
+    
+  }
+
+
+  .nav-btm{
+    width: 60%;
+  }
+
+  .nav-btm ul{
+    width:100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 12px 12px 12px 12px 12px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10%;
+  }
+
+  .nav-btm ul li a{
+    text-transform:none;
+    color: $secondaryText;
+    font-weight: 400;
+  }
+
+  form{
+    width: 40%;
+  }
+
+
+  form:nth-child(2) {
+    height: 100%;
+    padding-bottom: 3px;
+    border-bottom: 0.5px solid $secondaryText;
+    background-color: transparent;
+  }
+
+  input[type="email"], button{
+    background-color:transparent;
+    border:none;
+    line-height: 2.2rem;
+    color:$secondaryText;
+  }
+
+  button i{
+    @include fontSize(12)
+  }
+
+  input[type="email"]{
+    width: calc(100% - 16px);
+  }
+
+  input::placeholder{
+    line-height: 2rem;
+    opacity: 1;
+  }
+
+  .foot-top > form:nth-child(2) > button:nth-child(3) {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+  label{
+    display: block;
+    color: $secondaryText;
+    font-family: $fontStackPop;
+    margin-bottom: 10px;
+  }
+
+  .foot-bottom{
+    display: flex;
+    border-top: 0.5px solid $secondaryText;
+    padding-top: 5vh;
+    padding-bottom: 3vh;
+    justify-content: space-between;
+
+    ul{
+      display: flex;
+    }
+  }
+
+  .foot-bottom ul li{
+    margin-left: 40px;
+  }
+
+  .foot-bottom ul li a{
+    color: white;
+  }
+}

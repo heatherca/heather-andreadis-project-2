@@ -1,0 +1,72 @@
+.about{
+  background-color: $primaryBackground;
+  padding: 22vh 0;
+  padding-bottom: 29vh;
+
+  h3{
+    letter-spacing: 6px;
+    text-align: center;
+    margin-bottom: 12vh;
+  }
+
+  .about-body{
+    display: flex;
+    justify-content:space-between;
+  }
+
+  .about-pic{
+    position: relative;
+    flex: 1 0 40%;
+  }
+
+  .resort-stamp{
+    position: absolute;
+    height: 185px;
+    width: 185px;
+    bottom: -93px;
+    left:0;
+  }
+
+  .about-pic img:first-of-type{
+    position: relative;
+    width: 68%;
+    margin-left: 98px;
+    border: 12px solid white;
+  }
+
+  .about-words{
+    position: relative;
+    flex: 1 0 40%;
+    padding-left: 10px;
+  }
+
+  .about-words h2{
+    width: 80%;
+    margin-top: 30px;
+  }
+
+  .about-words p{
+    margin-top: 30px;
+    margin-bottom: 25px;
+    width: 88%;
+    
+  }
+
+  .about-words span:first-of-type{
+    font-weight: 600;
+    color: $primaryText;
+  }
+
+  .about-words::after {
+  content: " ";
+  background: black;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  height: 1px;
+  width: 12%;
+  border-top: 1px solid black;
+}
+
+
+}

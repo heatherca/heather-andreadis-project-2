@@ -1,0 +1,73 @@
+html {
+  font-size: 62.5%; 
+}
+
+// REMOVE DEFAULT STYLES 
+
+ul{
+  list-style-type: none;
+  margin:0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: $primaryText;
+}
+
+h1,h2,h3,h4,p{
+  margin: 0;
+  padding: 0;
+}
+
+// FONTS 
+
+
+h1{
+  @include fontSize(48);
+  font-family: $fontStackPlay;
+  font-weight: bold;
+}
+
+h2{
+  @include fontSize(35);
+  font-family: $fontStackPlay;
+  font-weight: bold;
+  line-height: 4.4rem;
+}
+
+h3, li a{
+  @include fontSize(12);
+  font-family:$fontStackPop;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: $primaryText;
+}
+
+h3{
+  color: $secondaryText;
+}
+
+p, span, input::placeholder{
+  @include fontSize(11);
+  font-family: $fontStackPop;
+  color:$secondaryText;
+  line-height: 2.2rem;
+}
+
+// OTHER
+.wrapper{
+  width: 61vw;
+  margin: 0 auto;
+
+}
+
+.visually-hidden { 
+  position: absolute !important;
+  height: 1px; 
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; 
+}

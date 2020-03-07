@@ -1,0 +1,261 @@
+main.blog-background{
+  background-color: $primaryBackground;
+  padding-bottom:15vh;
+}
+
+.blog-post {
+  .wrapper{
+    background-color: white;
+    position: relative;
+    width: 66vw;
+  } 
+
+  .blog-title{
+    position: absolute;
+    top: -65px;
+    background: white;
+    padding: 6vh 15vw;
+    padding-bottom:2vh;
+    text-align:center;
+  }
+  .blog-title h2{
+    @include fontSize(27);
+    line-height: 3.8rem;
+    margin-bottom: 30px;
+  }
+
+  .blog-title span:last-of-type{
+    color: $primaryText;
+  }
+
+  .post{
+    padding-top: 170px;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+  }
+
+  .post-info{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 3vh;
+    margin-bottom: 5vh;
+    border-bottom: 0.5px solid $secondaryText;
+  
+  }
+
+  .post-info h4{
+    @include fontSize(14);
+  }
+
+  .post-info >*{
+    display:flex;
+    align-items:center;
+  }
+
+  .author img{
+    border-radius: 50%;
+    width: 55px;
+    margin-right: 20px;
+  }
+
+  .post-data{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+  }
+
+  .post-content p{
+    @include fontSize(10.5);
+    line-height: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  .post-content p:first-of-type{
+    color: $primaryText;
+  }
+
+  .post-share{
+    display:flex;
+    @include fontSize(15);
+    margin-top: 6vh;
+  }
+
+  .post-share ul{
+    display: flex;
+    margin-left: 15px;
+  }
+
+  .post-share ul li{
+    margin-right: 10px;
+  }
+
+  .post-share ul li a{
+    color: $secondaryText;
+  }
+
+  .related-posts{
+    padding-top: 10vh;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+  }
+
+  .related-posts h2{
+    @include fontSize(22);
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid $secondaryText;
+    margin-bottom: 5vh;
+  }
+
+  .post-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2.5%;
+  }
+
+  .post-words{
+    padding: 10px 20px;
+  }
+
+  .post-words h4{
+    @include fontSize(15);
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .post-grid img{
+    width: 100%;
+  }
+
+  .post-comments{
+    padding-top: 10vh;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+  }
+
+  .post-comments h2{
+    @include fontSize(22);
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid $secondaryText;
+    margin-bottom: 5vh;
+  }
+
+  .comment{
+    display: flex;
+  }
+
+  .tip {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    background: transparent;
+    border: 10px solid #ccc;
+  }
+
+  .tip-left {
+  top: 10px;
+  left: -25px;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;  
+}
+
+.arrow{
+  height: 10px;
+  margin-top: 10px;
+  margin-left: 15px;
+  display:block;
+}
+
+.comment-words{
+  background-color: $primaryBackground;
+  padding: 20px;
+  padding-top:10px;
+  padding-right: 60px;
+  margin-bottom: 20px;
+}
+
+.comment img:first-child{
+  width: 55px;
+  height: 55px;
+}
+
+.comment-words p:nth-child(2){
+  @include fontSize(10)
+}
+
+.comment-words p:nth-child(1){
+  color: $primaryText;
+}
+
+.comment-words span{
+  color: $primaryAccent;
+  font-style: italic;
+}
+
+.comment-words p:nth-child(3){
+  @include fontSize(9);
+}
+
+.comment-form h2{
+  @include fontSize(22);
+  padding-bottom: 10px;
+  border-bottom: 0.5px solid $secondaryText;
+  margin-bottom: 5vh;
+}
+
+.comment-form{
+  padding-top: 7vh;
+  padding-left: 2.5vw;
+  padding-right: 2.5vw;
+}
+
+.comment-form fieldset{
+  border: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2.5%;
+  margin: 0;
+  padding: 0;
+}
+
+.comment-form fieldset > *{
+  border: none;
+  border-bottom: 0.5px solid $secondaryText;
+  padding-bottom:15px;
+  margin-bottom: 30px;
+}
+
+.comment-form textarea{
+  resize:none;
+  width: 100%;
+  margin-bottom: 4vh;
+  padding-top: 5px;
+  border:none;
+  border-bottom: 0.5px solid $secondaryText;
+}
+
+.comment-form textarea::placeholder{
+  @include fontSize(11);
+  font-family: $fontStackPop;
+  color:$secondaryText;
+}
+
+.comment-form input[type="submit"]{
+  background-color: $secondaryAccent;
+  border:none;
+  box-shadow:none;
+  text-transform:uppercase;
+  font-family: $fontStackPop;
+  font-weight:600;
+  padding: 10px 30px;
+  padding-top: 17px;
+  color: white;
+  @include fontSize(11);
+  margin-top: 20px;
+  margin-bottom: 7vh;
+}
+
+}
+
+
+

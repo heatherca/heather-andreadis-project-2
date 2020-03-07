@@ -1,0 +1,59 @@
+.location{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+
+  h3{
+    color: $primaryText;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+
+  .location-words{
+    padding-left: 19.5%;
+    width: 65vw;
+    display: flex;
+    align-items: center;
+  }
+
+  .location-img{
+    width:35vw;
+  }
+
+  .location-img img{
+    width: 100%;
+    display: block;
+  }
+
+  .location-words ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 30px;
+    height: 440px;
+  }
+
+  ul li{
+    display: flex;
+    width: 300px;
+    margin-bottom: 40px;
+  }
+
+  ul li p{
+    line-height: 1.8rem;
+    width: 210px;
+    @include fontSize(10.5);
+  }
+
+  i{
+    @include fontSize(25);
+    margin-right: 20px;
+    width: 25px;
+  }
+
+
+}
+

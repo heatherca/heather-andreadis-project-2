@@ -1,0 +1,26 @@
+// COLORS 
+$primaryText: #000;
+$secondaryText:#999999;
+$primaryBackground: #EDEDED;
+$thirdText: #CCCCCC;
+$primaryAccent: #A4F1DC;
+$secondaryAccent: #84A016;
+$iconColor: #F6AB09;
+
+// FONTSTACKS
+$fontStackPlay: 'Playfair Display', serif;
+$fontStackPop: 'Poppins', sans-serif;
+
+// MIXINS 
+@mixin fontSize($fontValue){
+  font-size: $fontValue * 1px;
+  font-size: ($fontValue/10) * 1rem;
+}
+
+
+
+
+
+
+// font-family: 'Playfair Display', serif;
+// font-family: 'Poppins', sans-serif;

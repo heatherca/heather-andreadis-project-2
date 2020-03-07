@@ -1,0 +1,72 @@
+.information{
+  display: grid;
+  grid-template-columns: 56% 36%;
+  grid-gap: 8%;
+
+  img{
+    width: 100%;
+    display: block;
+  }
+
+  .info-words{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  h3{
+    letter-spacing: 6px;
+  }
+
+  h2{
+    @include fontSize(44);
+    margin-top: 2vh;
+    margin-bottom: 13vh;
+  }
+
+  .info-words p:first-of-type{
+    margin-bottom: 15px;
+  }
+
+  .info-words p:first-of-type span{
+    font-family: $fontStackPlay;
+    @include fontSize(22);
+    font-weight: bold;
+    color: $thirdText;
+  }
+
+  .info-words p span:first-of-type{
+    color:$primaryText;
+  }
+
+  address{
+    font-style: normal;
+  }
+
+  address:first-of-type{
+    margin: 20px 0;
+    margin-bottom: 5vh;
+    font-family: $fontStackPop;
+    color: $secondaryText;
+    @include fontSize(12)
+  }
+
+  address:first-of-type span{
+    font-family: $fontStackPlay;
+    color: black;
+    font-weight: 700;
+  }
+
+  .info-words p:nth-of-type(4){
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  address:last-of-type{
+    @include fontSize(26);
+    font-family: $fontStackPlay;
+    font-weight: 700;
+  }
+  
+}
