@@ -30,6 +30,8 @@
   .about-pic img:first-of-type{
     position: relative;
     width: 68%;
+    min-width: 290px;
+    min-height: 290px;
     margin-left: 98px;
     border: 12px solid white;
   }

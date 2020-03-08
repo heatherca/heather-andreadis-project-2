@@ -1,0 +1,283 @@
+// MEDIA QUERIES FOR INDEX PAGE + GOBAL + HEADER + FOOTER 
+
+
+@media(max-width: 1290px){
+  .wrapper{
+    width: 76vw;
+  }
+  .about .resort-stamp{
+    height: 100px;
+    width: 100px;
+    bottom: -48px;
+    left: 50px;
+  }
+  .location .location-words{
+    padding-left: 10vw;
+  }
+  .location i{
+    margin-right: 10px;
+  }
+  .location .location-words ul{
+    height: 400px;
+  }
+  .location .location-words ul li{
+    width:275px;
+    margin-bottom: 10px;
+  }
+  .about .about-words{
+    padding-left: 30px;
+  }
+  .about .about-words::after{
+    left: 30px;
+  }
+}
+
+@media(max-width:1034px){
+  .about .resort-stamp{
+    height: 100px;
+    width: 100px;
+    top: 260px;
+    left: 70px;
+  }
+  .information h2{
+    margin-bottom: 5vh;
+  }
+}
+
+@media(max-width: 987px){
+  .location .location-words{
+    padding-left: 5vw;
+  }
+  .location .location-words ul{
+    height: 360px;
+  }
+}
+
+@media(max-width: 885px){
+  .wrapper{
+    width: 90vw;
+  }
+  header h1{
+    @include fontSize(40);
+  }
+  .about .about-words h2{
+    @include fontSize(30)
+  }
+  .location{
+    flex-direction: column-reverse;
+    justify-items:center;
+  }
+  .location .location-img{
+    width: 100%;
+    height: 70vh;
+    padding: 0;
+    margin: 0;
+    overflow:hidden;
+  }
+  .location .location-img img{
+    transform: translateY(-28%);
+  }
+  .location .location-words ul{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: column;
+    grid-template-rows: 110px 110px auto;
+    margin-bottom: 20px;
+  }
+  .location .location-words{
+    padding-left: 5vw;
+    width: 100%;
+  }
+  .testimonial h2{
+    @include fontSize(36);
+  }
+  .testimonial .client-quotes{
+    padding: 4% 5%;
+    margin: 0 5vw;
+  }
+  .testimonial .client-quotes i.arrow:last-of-type{
+    left: -30px;
+  }
+  .testimonial .client-quotes i.arrow:first-of-type{
+    right: -30px;
+  }
+  .testimonial .gallery ul{
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2.5%;
+  }
+  .information .info-words{
+    margin-bottom: 0px;
+  }
+  .information h2{
+    @include fontSize(39);
+    margin-bottom: 3vh;
+  }
+  .information address:first-of-type{
+    margin-bottom: 2vh;
+  }
+  .information address:last-of-type{
+    @include fontSize(22)
+  }
+}
+
+@media(max-width: 730px){
+  .header .hero-img{
+    height: 70vh;
+  }
+  .header h1{
+    @include fontSize(35);
+  }
+  .about{
+    padding: 15vh 0;
+  }
+  .about .about-body{
+    flex-direction: column;
+  }
+  .about .about-words{
+    padding-left: 90px;
+  }
+  .about .about-words::after {
+    content: none;
+  }
+  .about .resort-stamp{
+    height: 100px;
+    width: 100px;
+    top: 15px;
+    left: 110px;
+  }
+  .information{
+    grid-template-columns: 1fr;
+    grid-gap: 0%;
+  }
+  .information .info-words{
+    height: 400px;
+    padding-left: 5vw;
+  }
+  .imformation .info-pic{
+    width: 100%;
+    height: 70vh;
+    padding: 0;
+    margin: 0;
+    overflow:hidden;
+  }
+}
+
+@media(max-width: 586px){
+  header .nav-main ul{
+    display:none;
+  }
+  header h1{
+    background-color: white;
+    width: 100%;
+    padding: 4vh 0;
+
+    position: static;
+  }
+  .location ul li p {
+    line-height: 1.6rem;
+    width: 150px;
+  }
+  .location .location-words ul{
+    grid-template-rows: 150px 150px 150px;
+    padding-top: 20px;
+    height: 500px;
+  }
+  .location .location-words ul li{
+    width: 200px;
+  }
+  .testimonial .quote{
+    @include fontSize(16)
+  }
+  footer .nav-btm ul{
+    display:block;
+  }
+
+  footer .nav-btm ul li{
+    height: 22px;
+  }
+}
+
+@media(max-width:429px){
+  .header .hero-img{
+    height: 50vh
+  }
+  .about{
+    padding: 10vh 0;
+  }
+  .about h3{
+    margin-bottom: 8vh;
+  }
+  .about .about-pic img:first-of-type{
+    margin-left: 0px;
+  }
+  .about .resort-stamp{
+    left: 15px;
+  }
+  .about .about-words{
+    padding-left: 10px;
+  }
+  .about .about-words p{
+    width: 100%;
+  }
+  .about .about-words h2{
+    @include fontSize(25);
+    width: 100%;
+  }
+  .location h3{
+    height: 28px;
+  }
+  .location i{
+    @include fontSize(12);
+    width: 10px;
+    margin-right:5px;
+  }
+  .location .location-words ul{
+    grid-template-rows: 190px 190px 190px;
+    height: 600px;
+  }
+  .location .location-words ul li{
+    width: 144px;
+    height: 180px;
+  }
+  .location .location-words ul li p{
+    width: 114px;
+  }
+  .location .location-img img{
+    width: 100%;
+    transform: translateY(0%);
+  }
+  .location .location-img {
+    height: auto;
+  }
+  .testimonial h2{
+    @include fontSize(28);
+  }
+  .testimonial h2:last-of-type{
+    margin-bottom: 20px;
+  }
+  .testimonial{
+    padding-top: 11vh;
+    padding-bottom: 14vh;
+  }
+  .testimonial .gallery{
+    padding-top: 8vh;
+  }
+  .testimonial .quote{
+    @include fontSize(14);
+    line-height: 2.4rem;
+  }
+  .information h2{
+    @include fontSize(30)
+  }
+  footer .foot-top{
+    flex-direction: column-reverse;
+  }
+  footer form{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+
+ 
+}
