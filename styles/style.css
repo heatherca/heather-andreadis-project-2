@@ -413,6 +413,16 @@ header .hero-img-blog {
   height: 83vh;
 }
 
+header .hamburger {
+  color: #000;
+  font-size: 3.5rem;
+  display: none;
+}
+
+header input {
+  display: none;
+}
+
 .about {
   background-color: #EDEDED;
   padding: 22vh 0;
@@ -1596,8 +1606,52 @@ footer .foot-bottom ul li a {
 }
 
 @media (max-width: 586px) {
+  header .nav-main {
+    display: block;
+  }
+  header .nav-main ul li:nth-of-type(3) {
+    margin-right: 0px;
+  }
   header .nav-main ul {
-    display: none;
+    display: block;
+    text-align: right;
+    height: 0;
+    margin: 0;
+    padding-right: 15px;
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  header .nav-main ul li {
+    padding: 10px 0;
+  }
+  header .hamburger {
+    position: absolute;
+    top: 30px;
+    right: 5vw;
+    display: block;
+  }
+  header input {
+    position: absolute;
+    top: 28px;
+    right: 4vw;
+    height: 44px;
+    width: 40px;
+    z-index: 1;
+    border: none;
+    opacity: 0;
+    display: block;
+  }
+  header input:checked ~ ul {
+    height: 100%;
+    margin: 20px 0;
+    padding-right: 15px;
+    z-index: 1;
+    display: block;
+    text-align: right;
+  }
+  header .nav-main ul li p {
+    bottom: 3px;
   }
   header h1 {
     background-color: white;
