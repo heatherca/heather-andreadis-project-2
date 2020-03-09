@@ -1784,16 +1784,22 @@ footer .foot-bottom ul li a {
   }
 }
 
-@media (max-width: 940px) {
+@media (max-width: 1000px) {
   .blog-post .wrapper {
-    width: 80vw;
+    width: 70vw;
+  }
+}
+
+@media (max-width: 955px) {
+  .blog-post .wrapper {
+    width: 85vw;
   }
   .post-data p {
     width: 100px;
   }
 }
 
-@media (max-width: 735px) {
+@media (max-width: 745px) {
   .blog-post .wrapper {
     width: 90vw;
   }
@@ -1802,6 +1808,10 @@ footer .foot-bottom ul li a {
   }
   .blog-post .post-data {
     margin-right: 0;
+  }
+  .blog-post .comment-form fieldset {
+    -ms-grid-columns: none;
+        grid-template-columns: none;
   }
 }
 
@@ -1834,10 +1844,6 @@ footer .foot-bottom ul li a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .blog-post .comment-form fieldset {
-    -ms-grid-columns: none;
-        grid-template-columns: none;
   }
 }
 

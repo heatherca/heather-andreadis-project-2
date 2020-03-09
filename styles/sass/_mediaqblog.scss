@@ -1,3 +1,5 @@
+// MEDIA QUERIES FOR BLOG.HTML 
+
 @media(max-width: 1140px){
   .blog-post .blog-title{
     padding: 6vh 10vw;
@@ -7,16 +9,22 @@
   }
 }
 
-@media(max-width:940px){
+@media(max-width: 1000px){
   .blog-post .wrapper{
-    width: 80vw;
+    width: 70vw;
+  }
+}
+
+@media(max-width:955px){
+  .blog-post .wrapper{
+    width: 85vw;
   }
   .post-data p{
     width: 100px;
   }
 }
 
-@media(max-width: 735px){
+@media(max-width: 745px){
   .blog-post .wrapper{
     width: 90vw;
   }
@@ -25,6 +33,9 @@
   }
   .blog-post .post-data{
     margin-right: 0;
+  }
+  .blog-post .comment-form fieldset{
+    grid-template-columns: none;
   }
 }
 
@@ -42,16 +53,12 @@
     margin: 0 auto;
     justify-content: center;
     display: grid;
-
   }
   .blog-post .post-grid{
     display: inline-grid;
     grid-template-columns: 80%;
     grid-template-rows: 380px 380px 380px;
     justify-content: center;
-  }
-  .blog-post .comment-form fieldset{
-    grid-template-columns: none;
   }
 }
 

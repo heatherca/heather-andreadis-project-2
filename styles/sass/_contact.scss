@@ -33,7 +33,6 @@
   }
 
   .contact-data > *{
-    // border: 0.5px solid $secondaryText;
     padding: 5vh 2vw 4.5vh 3.5vw;
     width: calc(100% / 3);
     min-width: 200px;
@@ -42,7 +41,6 @@
   .contact-data div:nth-of-type(2){
     border-left: 0.5px solid $secondaryText;
     border-right: 0.5px solid $secondaryText;
-
   }
 
   .contact-data i{
@@ -71,63 +69,59 @@
     margin-top: 10px;
   }
   
-
   .contact-form fieldset{
-  border: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 2.5%;
-  margin: 0;
-  margin-top: 10vh;
-  padding: 0;
-}
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2.5%;
+    margin: 0;
+    margin-top: 10vh;
+    padding: 0;
+  }
 
-.contact-form fieldset > *{
-  border: none;
-  border-bottom: 0.5px solid $secondaryText;
-  padding-bottom:15px;
-  margin-bottom: 30px;
-}
+  .contact-form fieldset > *{
+    border: none;
+    border-bottom: 0.5px solid $secondaryText;
+    padding-bottom:15px;
+    margin-bottom: 30px;
+  }
 
-.contact-form input{
-  transition: all 0.5s ease;
-}
+  .contact-form input{
+    transition: all 0.5s ease;
+  }
 
-.contact-form textarea{
-  resize:none;
-  width: 100%;
-  margin-bottom: 4vh;
-  padding-top: 5px;
-  border:none;
-  border-bottom: 0.5px solid $secondaryText;
-}
+  .contact-form textarea{
+    resize:none;
+    width: 100%;
+    margin-bottom: 4vh;
+    padding-top: 5px;
+    border:none;
+    border-bottom: 0.5px solid $secondaryText;
+  }
 
-.contact-form textarea::placeholder{
-  @include fontSize(11);
-  font-family: $fontStackPop;
-  color:$secondaryText;
-}
+  .contact-form textarea::placeholder{
+    @include fontSize(11);
+    font-family: $fontStackPop;
+    color:$secondaryText;
+  }
 
-.contact-form input[type="submit"]{
-  background-color: transparent;
-  border:none;
-  border-bottom: 1px solid black;
-  box-shadow:none;
-  text-transform:uppercase;
-  font-family: $fontStackPop;
-  font-weight:600;
-  padding:0;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  letter-spacing: 1px;
-  color: $primaryText;
-  @include fontSize(11);
-  margin-top: 15px;
-  cursor:pointer;
-  transition: all 0.5s ease;
-}
-
-
-
+  .contact-form input[type="submit"]{
+    background-color: transparent;
+    border:none;
+    border-bottom: 1px solid black;
+    box-shadow:none;
+    text-transform:uppercase;
+    font-family: $fontStackPop;
+    font-weight:600;
+    padding:0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+    color: $primaryText;
+    @include fontSize(11);
+    margin-top: 15px;
+    cursor:pointer;
+    transition: all 0.5s ease;
+  }
 
 }

@@ -4,6 +4,7 @@ header{
     justify-content: center;
     align-items: center;
   }
+
   h1{
     position: absolute;
     z-index:1;
@@ -38,6 +39,7 @@ header{
     height: 12px;
     line-height: 0.8rem;
   }
+
   .hero-img{
     background-image: url(./assets/home-1.jpeg);
     background-size: cover;
@@ -51,12 +53,13 @@ header{
     background-position: center;
     height: 83vh;
   }
+
   .hamburger{
     color:$primaryText;
     font-size: 3.5rem;
     display:none;
   }
-
+  
   input{
     display: none;
   }

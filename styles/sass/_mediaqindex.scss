@@ -32,6 +32,7 @@
   }
 }
 
+
 @media(max-width:1034px){
   .about .resort-stamp{
     height: 100px;
@@ -44,6 +45,7 @@
   }
 }
 
+
 @media(max-width: 987px){
   .location .location-words{
     padding-left: 5vw;
@@ -52,6 +54,7 @@
     height: 360px;
   }
 }
+
 
 @media(max-width: 885px){
   .wrapper{
@@ -121,6 +124,7 @@
   }
 }
 
+
 @media(max-width: 730px){
   .header .hero-img{
     height: 70vh;
@@ -163,6 +167,7 @@
   }
 }
 
+
 @media(max-width: 586px){
   header .nav-main{
     display:block;
@@ -170,7 +175,6 @@
   header .nav-main ul li:nth-of-type(3){
     margin-right: 0px;
   }
-
   header .nav-main ul{
     display: block;
     text-align: right;
@@ -215,7 +219,6 @@
     background-color: white;
     width: 100%;
     padding: 4vh 0;
-
     position: static;
   }
   .location ul li p {
@@ -236,11 +239,11 @@
   footer .nav-btm ul{
     display:block;
   }
-
   footer .nav-btm ul li{
     height: 22px;
   }
 }
+
 
 @media(max-width:429px){
   .header .hero-img{
@@ -321,7 +324,5 @@
     width: 100%;
     margin-bottom: 20px;
   }
-
-
  
 }
