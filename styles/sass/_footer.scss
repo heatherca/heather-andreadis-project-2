@@ -28,6 +28,7 @@ footer{
     text-transform:none;
     color: $secondaryText;
     font-weight: 400;
+    transition: all 0.5s ease;
   }
 
   form{
@@ -50,11 +51,13 @@ footer{
   }
 
   button i{
-    @include fontSize(12)
+    @include fontSize(12);
+    transition: all 0.5s ease;
   }
 
   input[type="email"]{
     width: calc(100% - 16px);
+    color: white;
   }
 
   input::placeholder{
@@ -65,7 +68,7 @@ footer{
   .foot-top > form:nth-child(2) > button:nth-child(3) {
     padding-left: 0px;
     padding-right: 0px;
-}
+  }
 
   label{
     display: block;
@@ -86,11 +89,9 @@ footer{
     }
   }
 
-  .foot-bottom ul li{
-    margin-left: 40px;
-  }
-
   .foot-bottom ul li a{
     color: white;
+    transition: all 0.5s ease;
+    padding-left: 40px;
   }
 }

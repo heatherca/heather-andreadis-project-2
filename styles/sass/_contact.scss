@@ -48,6 +48,7 @@
   .contact-data i{
     @include fontSize(30);
     margin-bottom: 15px;
+    transition: all 0.5s ease;
   }
 
   .contact-data h4{
@@ -88,6 +89,10 @@
   margin-bottom: 30px;
 }
 
+.contact-form input{
+  transition: all 0.5s ease;
+}
+
 .contact-form textarea{
   resize:none;
   width: 100%;
@@ -112,11 +117,14 @@
   font-family: $fontStackPop;
   font-weight:600;
   padding:0;
+  padding-top: 5px;
   padding-bottom: 5px;
   letter-spacing: 1px;
   color: $primaryText;
   @include fontSize(11);
-  margin-top: 20px;
+  margin-top: 15px;
+  cursor:pointer;
+  transition: all 0.5s ease;
 }
 
 

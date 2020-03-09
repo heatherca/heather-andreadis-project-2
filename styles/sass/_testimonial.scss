@@ -55,6 +55,7 @@
     @include fontSize(36);
     right: -60px;
     bottom: 50%;
+    transition: all 0.5s ease;
   }
 
   .client-quotes i.arrow:last-of-type{
@@ -62,6 +63,7 @@
     @include fontSize(36);
     left: -60px;
     bottom: 50%;
+    transition: all 0.5s ease;
   }
 
   h2:last-of-type{
@@ -83,8 +85,13 @@
     row-gap: 5%;
   }
 
+  .gallery ul li{
+    overflow: hidden;
+  }
+
   .gallery ul img{
     width: 100%;
+    transition: .3s ease-in-out;
   }
 
   

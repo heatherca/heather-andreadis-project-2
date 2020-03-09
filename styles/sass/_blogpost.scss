@@ -8,6 +8,7 @@ main.blog-background{
     background-color: white;
     position: relative;
     width: 66vw;
+    max-width: 1200px;
   } 
 
   .blog-title{
@@ -22,6 +23,9 @@ main.blog-background{
     @include fontSize(27);
     line-height: 3.8rem;
     margin-bottom: 30px;
+  }
+  .blog-title span a{
+    color: $secondaryText;
   }
 
   .blog-title span:last-of-type{
@@ -85,11 +89,8 @@ main.blog-background{
     margin-left: 15px;
   }
 
-  .post-share ul li{
-    margin-right: 10px;
-  }
-
   .post-share ul li a{
+    padding-right: 10px;
     color: $secondaryText;
   }
 
@@ -112,6 +113,10 @@ main.blog-background{
     grid-gap: 2.5%;
   }
 
+  .post-grid > div{
+    transition: all 0.5s ease;
+  }
+
   .post-words{
     padding: 10px 20px;
   }
@@ -120,6 +125,7 @@ main.blog-background{
     @include fontSize(15);
     padding-top: 10px;
     padding-bottom: 20px;
+    transition: all 0.5s ease;
   }
 
   .post-grid img{
@@ -138,6 +144,9 @@ main.blog-background{
     border-bottom: 0.5px solid $secondaryText;
     margin-bottom: 5vh;
   }
+  .post-words p:last-of-type{
+    transition: all 0.5s ease;
+  }
 
   .comment{
     display: flex;
@@ -151,7 +160,7 @@ main.blog-background{
     border: 10px solid #ccc;
   }
 
-  .tip-left {
+.tip-left {
   top: 10px;
   left: -25px;
   border-top-color: transparent;
@@ -224,6 +233,11 @@ main.blog-background{
   padding-bottom:15px;
   margin-bottom: 30px;
 }
+.comment-form input{
+  font-family: $fontStackPop;
+  color: $primaryText;
+  transition: all 0.5s ease;
+}
 
 .comment-form textarea{
   resize:none;
@@ -238,6 +252,10 @@ main.blog-background{
   @include fontSize(11);
   font-family: $fontStackPop;
   color:$secondaryText;
+  transition: all 0.5s ease;
+}
+.comment-form input:hover::-moz-placeholder{
+  transition: all 0.5s ease;
 }
 
 .comment-form input[type="submit"]{
@@ -253,6 +271,8 @@ main.blog-background{
   @include fontSize(11);
   margin-top: 20px;
   margin-bottom: 7vh;
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
 
 }

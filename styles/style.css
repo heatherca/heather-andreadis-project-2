@@ -237,6 +237,8 @@ html {
 
 html {
   font-size: 62.5%;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 body {
@@ -281,6 +283,8 @@ h3, li a {
   text-transform: uppercase;
   font-weight: 600;
   color: #000;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 h3 {
@@ -293,6 +297,8 @@ p, span, input::-webkit-input-placeholder {
   font-family: "Poppins", sans-serif;
   color: #999999;
   line-height: 2.2rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 p, span, input:-ms-input-placeholder {
@@ -301,6 +307,8 @@ p, span, input:-ms-input-placeholder {
   font-family: "Poppins", sans-serif;
   color: #999999;
   line-height: 2.2rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 p, span, input::-ms-input-placeholder {
@@ -309,6 +317,8 @@ p, span, input::-ms-input-placeholder {
   font-family: "Poppins", sans-serif;
   color: #999999;
   line-height: 2.2rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 p, span, input::placeholder {
@@ -317,6 +327,8 @@ p, span, input::placeholder {
   font-family: "Poppins", sans-serif;
   color: #999999;
   line-height: 2.2rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .wrapper {
@@ -435,6 +447,10 @@ header .hero-img-blog {
   width: 185px;
   bottom: -93px;
   left: 0;
+  -webkit-transition: -webkit-transform 5s ease 0.2s;
+  transition: -webkit-transform 5s ease 0.2s;
+  transition: transform 5s ease 0.2s;
+  transition: transform 5s ease 0.2s, -webkit-transform 5s ease 0.2s;
 }
 
 .about .about-pic img:first-of-type {
@@ -624,6 +640,8 @@ header .hero-img-blog {
   font-size: 3.6rem;
   right: -60px;
   bottom: 50%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .testimonial .client-quotes i.arrow:last-of-type {
@@ -632,6 +650,8 @@ header .hero-img-blog {
   font-size: 3.6rem;
   left: -60px;
   bottom: 50%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .testimonial h2:last-of-type {
@@ -663,8 +683,14 @@ header .hero-img-blog {
   row-gap: 5%;
 }
 
+.testimonial .gallery ul li {
+  overflow: hidden;
+}
+
 .testimonial .gallery ul img {
   width: 100%;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .information {
@@ -761,6 +787,7 @@ main.blog-background {
   background-color: white;
   position: relative;
   width: 66vw;
+  max-width: 1200px;
 }
 
 .blog-post .blog-title {
@@ -777,6 +804,10 @@ main.blog-background {
   font-size: 2.7rem;
   line-height: 3.8rem;
   margin-bottom: 30px;
+}
+
+.blog-post .blog-title span a {
+  color: #999999;
 }
 
 .blog-post .blog-title span:last-of-type {
@@ -856,11 +887,8 @@ main.blog-background {
   margin-left: 15px;
 }
 
-.blog-post .post-share ul li {
-  margin-right: 10px;
-}
-
 .blog-post .post-share ul li a {
+  padding-right: 10px;
   color: #999999;
 }
 
@@ -886,6 +914,11 @@ main.blog-background {
   grid-gap: 2.5%;
 }
 
+.blog-post .post-grid > div {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
 .blog-post .post-words {
   padding: 10px 20px;
 }
@@ -895,6 +928,8 @@ main.blog-background {
   font-size: 1.5rem;
   padding-top: 10px;
   padding-bottom: 20px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .blog-post .post-grid img {
@@ -913,6 +948,11 @@ main.blog-background {
   padding-bottom: 10px;
   border-bottom: 0.5px solid #999999;
   margin-bottom: 5vh;
+}
+
+.blog-post .post-words p:last-of-type {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .blog-post .comment {
@@ -1008,6 +1048,13 @@ main.blog-background {
   margin-bottom: 30px;
 }
 
+.blog-post .comment-form input {
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
 .blog-post .comment-form textarea {
   resize: none;
   width: 100%;
@@ -1022,6 +1069,8 @@ main.blog-background {
   font-size: 1.1rem;
   font-family: "Poppins", sans-serif;
   color: #999999;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .blog-post .comment-form textarea:-ms-input-placeholder {
@@ -1029,6 +1078,8 @@ main.blog-background {
   font-size: 1.1rem;
   font-family: "Poppins", sans-serif;
   color: #999999;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .blog-post .comment-form textarea::-ms-input-placeholder {
@@ -1036,6 +1087,8 @@ main.blog-background {
   font-size: 1.1rem;
   font-family: "Poppins", sans-serif;
   color: #999999;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .blog-post .comment-form textarea::placeholder {
@@ -1043,6 +1096,13 @@ main.blog-background {
   font-size: 1.1rem;
   font-family: "Poppins", sans-serif;
   color: #999999;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.blog-post .comment-form input:hover::-moz-placeholder {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .blog-post .comment-form input[type="submit"] {
@@ -1060,6 +1120,9 @@ main.blog-background {
   font-size: 1.1rem;
   margin-top: 20px;
   margin-bottom: 7vh;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .hero-img-contact {
@@ -1115,6 +1178,8 @@ main.blog-background {
   font-size: 30px;
   font-size: 3rem;
   margin-bottom: 15px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .contact-info .contact-data h4 {
@@ -1157,6 +1222,11 @@ main.blog-background {
   border-bottom: 0.5px solid #999999;
   padding-bottom: 15px;
   margin-bottom: 30px;
+}
+
+.contact-info .contact-form input {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .contact-info .contact-form textarea {
@@ -1206,12 +1276,16 @@ main.blog-background {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   padding: 0;
+  padding-top: 5px;
   padding-bottom: 5px;
   letter-spacing: 1px;
   color: #000;
   font-size: 11px;
   font-size: 1.1rem;
-  margin-top: 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 footer {
@@ -1250,6 +1324,8 @@ footer .nav-btm ul li a {
   text-transform: none;
   color: #999999;
   font-weight: 400;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 footer form {
@@ -1273,10 +1349,13 @@ footer input[type="email"], footer button {
 footer button i {
   font-size: 12px;
   font-size: 1.2rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 footer input[type="email"] {
   width: calc(100% - 16px);
+  color: white;
 }
 
 footer input::-webkit-input-placeholder {
@@ -1329,12 +1408,11 @@ footer .foot-bottom ul {
   display: flex;
 }
 
-footer .foot-bottom ul li {
-  margin-left: 40px;
-}
-
 footer .foot-bottom ul li a {
   color: white;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  padding-left: 40px;
 }
 
 @media (max-width: 1290px) {
@@ -1697,8 +1775,8 @@ footer .foot-bottom ul li a {
     display: inline-grid;
     -ms-grid-columns: 80%;
         grid-template-columns: 80%;
-    -ms-grid-rows: 360px 360px 360px;
-        grid-template-rows: 360px 360px 360px;
+    -ms-grid-rows: 380px 380px 380px;
+        grid-template-rows: 380px 380px 380px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1770,4 +1848,102 @@ footer .foot-bottom ul li a {
     font-size: 30px;
     font-size: 3rem;
   }
+}
+
+.header .nav-main ul li a:hover, .header .nav-main ul li a:focus {
+  color: #999999;
+}
+
+.resort-stamp:hover, resort-stamp:focus {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.client-quotes i.arrow:hover, .client-quotes i.arrow:focus {
+  color: #999999;
+  cursor: pointer;
+}
+
+.gallery ul img:hover, .gallery ul img:focus {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.nav-btm ul li a:hover, .nav-btm ul li a:focus {
+  color: #EDEDED;
+}
+
+footer button:hover, footer button:focus {
+  color: #A4F1DC;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+footer .foot-bottom ul li a:hover, footer .foot-bottom ul li a:focus {
+  color: #A4F1DC;
+}
+
+.blog-title span a:hover, .blog-title span a:focus {
+  -webkit-text-decoration: underline solid #000;
+          text-decoration: underline solid #000;
+}
+
+.post-share ul li a:hover, .post-shar ul li a:focus {
+  color: #A4F1DC;
+}
+
+.post-grid > div:hover, .post-grid > div:focus {
+  -webkit-box-shadow: 0px 25px 15px -14px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 25px 15px -14px rgba(0, 0, 0, 0.2);
+}
+
+.post-grid > div:hover .post-words h4, .post-grid > div:focus .post-words h4 {
+  -webkit-text-decoration: underline 0.5px #999999;
+          text-decoration: underline 0.5px #999999;
+}
+
+.post-grid > div:hover .post-words p:last-of-type, .post-grid > div:focus .post-words p:last-of-type {
+  color: #000;
+  font-weight: 600;
+}
+
+.comment-form input:hover, .comment-form input:focus {
+  border-bottom: 0.5px solid #000;
+}
+
+.comment-form input:hover::-moz-placeholder {
+  color: #000;
+  opacity: 1;
+}
+
+.comment-form textarea:hover::-moz-placeholder {
+  color: #000;
+  opacity: 1;
+}
+
+.comment-form input[type="submit"]:hover {
+  background-color: #a9cd1c;
+}
+
+.contact-form input:hover, .comment-form input:focus {
+  border-bottom: 0.5px solid #000;
+}
+
+.contact-form input:hover::-moz-placeholder {
+  color: #000;
+  opacity: 1;
+}
+
+.contact-form textarea:hover::-moz-placeholder {
+  color: #000;
+  opacity: 1;
+}
+
+.contact-form input[type="submit"]:hover, .contact-form input[type="submit"]:focus {
+  -webkit-box-shadow: 5px 5px 1px 0px #999999;
+          box-shadow: 5px 5px 1px 0px #999999;
+}
+
+.contact-data div:hover i, .contact-data div:focus i {
+  color: #148264;
 }

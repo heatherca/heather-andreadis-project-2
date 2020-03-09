@@ -1,5 +1,6 @@
 html {
   font-size: 62.5%; 
+  transition: all 1s ease;
 }
 
 body{
@@ -46,6 +47,7 @@ h3, li a{
   text-transform: uppercase;
   font-weight: 600;
   color: $primaryText;
+  transition: all 0.5s ease;
 }
 
 h3{
@@ -57,6 +59,7 @@ p, span, input::placeholder{
   font-family: $fontStackPop;
   color:$secondaryText;
   line-height: 2.2rem;
+  transition: all 0.5s ease;
 }
 
 // OTHER
